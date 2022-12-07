@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cdaea27-422f-491c-8313-a2dd81da5875" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/TargetFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/marcinator/opgaver/AppTest.java" afterDir="false" />
+    <list default="true" id="6cdaea27-422f-491c-8313-a2dd81da5875" name="Changes" comment="working iterator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/TargetFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/TargetFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +132,24 @@
       <workItem from="1670314755532" duration="592000" />
       <workItem from="1670315802343" duration="1733000" />
       <workItem from="1670319831564" duration="13000" />
-      <workItem from="1670407917376" duration="347000" />
+      <workItem from="1670407917376" duration="3759000" />
     </task>
+    <task id="LOCAL-00001" summary="working iterator">
+      <created>1670408730726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670408730726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working iterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="working iterator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -151,6 +158,11 @@
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/TargetFinder.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

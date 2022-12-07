@@ -1,6 +1,5 @@
 package net.marcinator.opgaver;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -11,23 +10,25 @@ public class TargetFinder implements Iterator<Integer> {
     /**
      * Arraylist which contains the resulting array
      */
-    private ArrayList<Integer> ArrayResult;
+    private final ArrayList<Integer> ArrayResult;
     /**
      * Contains the target for which to search for
      */
-    private int[] Target;
+    private final int[] Target;
     /**
      * contains an index for the current located target
      */
-    private int index = 0;
+    private int index;
     /**
-     * cached size of result
+     * variable used to ensure that the finder has run without the need to evaluate arraylist size.
      */
-    private int size;
+    private boolean hasRun = false;
 
     public TargetFinder(int[] array, int[] target) {
         ArrayResult = (ArrayList<Integer>) Arrays.stream(array).boxed().collect(Collectors.toList());
-        size = ArrayResult.size();
+        index = ArrayResult.size()-1;
+
+        Utils.reverseArray(target);
 
         Target = target;
     }
@@ -40,16 +41,13 @@ public class TargetFinder implements Iterator<Integer> {
     @Override
     public boolean hasNext() {
         //quick check if the iter is done
-        if (index + Target.length >= size) {
+        //if there can fit another target in the remaining array. Index starts at zero so add one to properly check it.
+        if (index - Target.length + 1 < 0) {
             return false;
         }
 
         //find next target in array
-        if (findNext()) {
-            return true;
-        }
-
-        return false;
+        return findNext();
     }
 
     /**
@@ -58,14 +56,13 @@ public class TargetFinder implements Iterator<Integer> {
      */
     @Override
     public Integer next() {
-        if (distanceToNextIndex == -1 && !findNext()) {
+        if (NextIndex == -1 && !findNext()) {
             throw new IllegalStateException("Iterator already finished");
 
         }
 
-        index += distanceToNextIndex;
-        replaceDif = 0;
-        distanceToNextIndex = -1;
+        index = NextIndex;
+        NextIndex = -1;
 
         return index;
     }
@@ -74,7 +71,7 @@ public class TargetFinder implements Iterator<Integer> {
     /**
      * contains a distance to next target used to quickly go to next target when next() is called
      */
-    private int distanceToNextIndex = -1;
+    private int NextIndex = -1;
 
 
     /**
@@ -83,27 +80,23 @@ public class TargetFinder implements Iterator<Integer> {
      * @return <code>true</code> if another target is found
      */
     private boolean findNext() {
-        int i = index + (index != 0 ? Target.length + replaceDif : 0);
+        int i = index;
 
-        while (i < size) {
+        while (i >= 0) {
             int j = 0;
-            while (j < Target.length && ArrayResult.get(i + j) == Target[j]) {
+            while (j < Target.length && ArrayResult.get(i - j) == Target[j]) {
                 j++;
             }
             if (j == Target.length) {
-                distanceToNextIndex = i - index;
-                return true;
+                //index is one too large because it just added to the collector
+                NextIndex = i-(j-1);
+                return (hasRun = true);
             }
-            i++;
+            i--;
         }
 
         return false;
     }
-
-    /**
-     * stores the size difference between the target and the replacement
-     */
-    public int replaceDif = 0;
 
     /**
      * Replaces the current target with inputted elements
@@ -112,20 +105,14 @@ public class TargetFinder implements Iterator<Integer> {
      * @throws IllegalStateException when the Iterator has not yet run
      */
     public void replace(int[] replace) throws IllegalStateException {
-        //if distanceToNextIndex is -1 at the index of 0 then the iterator has yet to run
-        if (distanceToNextIndex == -1 && index == 0)
+        if (!hasRun)
             throw new IllegalStateException("Iterator has not yet found a target");
 
         for (int i = 0; i < Target.length; i++) {
             ArrayResult.remove(index);
         }
 
-        ArrayResult.addAll(index, Arrays.stream(replace).boxed().collect(Collectors.toList()));
-
-        //                            current target length with longer replace
-        replaceDif = replace.length - (Target.length + replaceDif);
-
-        size += replaceDif;
+        ArrayResult.addAll(index, Arrays.stream(replace).boxed().toList());
     }
 
     /**
