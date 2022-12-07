@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cdaea27-422f-491c-8313-a2dd81da5875" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/marcinator/opgaver/TargetFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/marcinator/opgaver/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jrt:///usr/lib/jvm/java-17-openjdk-amd64!/java.base/java/util/ArrayList.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="6goi9zn3" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IUaunnAPeo6xkig7n9X0sD1yUJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="5fc0a456-e663-48c0-85c5-ce7aff1bbf47" />
+      <option name="artifact" />
+      <option name="autoPort" value="true" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="funcPort" value="0" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.marcinator.opgaver.App" />
+      <module name="ArrayTarget" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.marcinator.opgaver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cdaea27-422f-491c-8313-a2dd81da5875" name="Changes" comment="" />
+      <created>1670238842507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670238842507</updated>
+      <workItem from="1670238843641" duration="6025000" />
+      <workItem from="1670251341101" duration="5156000" />
+      <workItem from="1670256561352" duration="4000" />
+      <workItem from="1670261955137" duration="3713000" />
+      <workItem from="1670314755532" duration="592000" />
+      <workItem from="1670315802343" duration="1733000" />
+      <workItem from="1670319831564" duration="13000" />
+      <workItem from="1670407917376" duration="347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
